@@ -19,7 +19,6 @@ RUN mvn clean install
 # Usa a imagem oficial do OpenJDK 17 (imagem slim) como estágio final
 FROM openjdk:17-jdk-slim
  
-# Expõe a porta 8080 do contêiner
 EXPOSE 8080
  
 # Copia o arquivo JAR compilado do estágio de construção para o diretório raiz do contêiner
